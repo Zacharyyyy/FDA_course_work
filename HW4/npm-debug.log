@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'electron',
+1 verbose cli   '--save-dev',
+1 verbose cli   '[--save-exact]' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose config Skipping project config: /Users/zackary/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData electron
+9 silly fetchPackageMetaData [--save-exact]
+10 silly fetchNamedPackageData electron
+11 silly mapToRegistry name electron
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 'electron',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   escapedName: 'electron',
+14 silly mapToRegistry   name: 'electron',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/electron
+16 silly fetchOtherPackageData [--save-exact]
+17 silly cache add args [ '[--save-exact]', null ]
+18 verbose cache add spec [--save-exact]
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: '[--save-exact]',
+19 silly cache add   scope: null,
+19 silly cache add   escapedName: null,
+19 silly cache add   name: null,
+19 silly cache add   rawSpec: '[--save-exact]',
+19 silly cache add   spec: '/Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]',
+19 silly cache add   type: 'local' }
+20 verbose request uri https://registry.npmjs.org/electron
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 13:26:37
+23 verbose request id 3684039b1ca852ce
+24 http request GET https://registry.npmjs.org/electron
+25 error addLocal Could not install /Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]
+26 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData  error for [--save-exact] { Error: ENOENT: no such file or directory, open '/Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData   errno: -2,
+26 silly fetchPackageMetaData   code: 'ENOENT',
+26 silly fetchPackageMetaData   syscall: 'open',
+26 silly fetchPackageMetaData   path: '/Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]' }
+27 http 200 https://registry.npmjs.org/electron
+28 verbose headers { date: 'Thu, 16 May 2019 05:26:37 GMT',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'transfer-encoding': 'chunked',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'set-cookie': [ '__cfduid=dea78bce5d27fd84a846477aae8ed74ea1557984397; expires=Fri, 15-May-20 05:26:37 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+28 verbose headers   'cf-cache-status': 'HIT',
+28 verbose headers   'cache-control': 'max-age=300',
+28 verbose headers   'cf-ray': '4d7af01679b345f4-TPE',
+28 verbose headers   etag: 'W/"3add7269956b8ba8ca51f8eddc7da69f"',
+28 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+28 verbose headers   'last-modified': 'Tue, 14 May 2019 22:24:32 GMT',
+28 verbose headers   vary: 'accept-encoding, accept',
+28 verbose headers   'x-amz-meta-rev': '503-97bf4e5c1decbd3491c09c63c6bc5695',
+28 verbose headers   server: 'cloudflare',
+28 verbose headers   'content-encoding': 'gzip' }
+29 silly get cb [ 200,
+29 silly get   { date: 'Thu, 16 May 2019 05:26:37 GMT',
+29 silly get     'content-type': 'application/json',
+29 silly get     'transfer-encoding': 'chunked',
+29 silly get     connection: 'keep-alive',
+29 silly get     'set-cookie': [ '__cfduid=dea78bce5d27fd84a846477aae8ed74ea1557984397; expires=Fri, 15-May-20 05:26:37 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+29 silly get     'cf-cache-status': 'HIT',
+29 silly get     'cache-control': 'max-age=300',
+29 silly get     'cf-ray': '4d7af01679b345f4-TPE',
+29 silly get     etag: 'W/"3add7269956b8ba8ca51f8eddc7da69f"',
+29 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+29 silly get     'last-modified': 'Tue, 14 May 2019 22:24:32 GMT',
+29 silly get     vary: 'accept-encoding, accept',
+29 silly get     'x-amz-meta-rev': '503-97bf4e5c1decbd3491c09c63c6bc5695',
+29 silly get     server: 'cloudflare',
+29 silly get     'content-encoding': 'gzip' } ]
+30 verbose get saving electron to /Users/zackary/.npm/registry.npmjs.org/electron/.cache.json
+31 verbose correctMkdir /Users/zackary/.npm correctMkdir not in flight; initializing
+32 silly rollbackFailedOptional Starting
+33 silly rollbackFailedOptional Finishing
+34 silly runTopLevelLifecycles Finishing
+35 silly install printInstalled
+36 verbose stack Error: ENOENT: no such file or directory, open '/Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]'
+36 verbose stack     at Error (native)
+37 verbose cwd /Users/zackary/Desktop/大學/三下/FDA_course_work/HW4
+38 error Darwin 18.2.0
+39 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "electron" "--save-dev" "[--save-exact]"
+40 error node v6.9.4
+41 error npm  v3.10.10
+42 error path /Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]
+43 error code ENOENT
+44 error errno -2
+45 error syscall open
+46 error enoent ENOENT: no such file or directory, open '/Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]'
+47 error enoent ENOENT: no such file or directory, open '/Users/zackary/Desktop/大學/三下/FDA_course_work/HW4/[--save-exact]'
+47 error enoent This is most likely not a problem with npm itself
+47 error enoent and is related to npm not being able to find a file.
+48 verbose exit [ -2, true ]
